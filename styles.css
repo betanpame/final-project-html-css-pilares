@@ -1,4 +1,10 @@
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 body {
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,9 +16,21 @@ header {
   text-align: center;
   /*display: flex;*/
   background-color: white;
-  padding: 15px;
+  padding: 15px 0;
+  padding-bottom: 0;
   color: #8B5E3B;
   ;
+}
+
+#header-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header-top h1 {
+  width: 100%;
+  margin-left: 155.6px;
 }
 
 nav ul {
@@ -56,11 +74,13 @@ nav ul li a {
   color: white;
   padding: 50px;
   font-size: 18px;
+  margin: 0;
 }
 
 
 h3 {
   color: darkred;
+  margin-left: 20px;
 }
 
 .libros-container {
@@ -83,6 +103,11 @@ h3 {
   border-radius: 5px;
 }
 
+.libro span {
+  color: #B69A76;
+  font-weight: bold;
+}
+
 
 button {
   background-color: darkred;
@@ -96,65 +121,79 @@ button {
 /* Sección Conócenos */
 .conocenos {
   background-color: #fff;
-  padding: 50px 20px;
+  padding: 50px 0;
+  margin: 20px;
   text-align: left;
-  max-width: 50%;
-  margin: 0 auto;
+  width: calc(100% - 32px);
   border-radius: 10px;
-  justify-content: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.conocenos-texto, .conocenos-imagen {
+  width: 50%;
 }
 
 /*.conocenos-imagen {
   flex: 1;
-  display: flex;
   justify-content: right;
 }*/
 
 .conocenos img {
-  
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   justify-content: right;
 }
 .conocenos p {
-  font-size: 18px;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 .conocenos strong {
+  display: block;
   color: #8B0000;
   font-size: 20px;
+  text-align: center;
 }
 
 footer {
   background-color: #8B5E3B;
   color: white;
-  padding: 20px;
+  padding: 0.5rem;
   margin-top: 20px;
-  display: flex;
   justify-content: space-between;
   text-align: left;
 }
 
-.footer-section {
-  flex: 1;
-  padding: 10px;
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.footer-section h4 {
+.footer-info div{
+  width: 33%;
+}
+
+.footer-info h4 {
   margin-bottom: 10px;
 }
 
-.footer-section p,
-.footer-section a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
+footer .footer-info .social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  gap: 0.2rem;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
+footer > p {
+  margin-top: 2rem;
+  text-align: center;
 }
