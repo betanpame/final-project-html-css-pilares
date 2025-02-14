@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  align-items: center;
+  text-align: center;
+  /*display: flex;*/
+  background-color: white;
+  padding: 15px;
+  color: #8B5E3B;
+  ;
+}
+
+nav ul {
+  background-color: #b4967f;
+  border-style: none ;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.search-bar {
+  padding: 15px;
+  display: flex;
+  justify-content:right;
+}
+
+.search-bar input {
+  padding: 5px;
+  border-style:solid;
+  border-color: #b4967f;
+  border-radius: 20px;
+}
+
+.banner {
+  background-image: url(https://github.com/EsCodPilares/Imagenes_Proyecto_DW/assets/159093155/cd26affd-c4f2-4a6d-bb6e-0b079972f5ac);
+  text-align: center;
+  color: white;
+  padding: 50px;
+  font-size: 18px;
+}
+
+
+h3 {
+  color: darkred;
+}
+
+.libros-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.libro {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.libro img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Sección Conócenos */
+.conocenos {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: left;
+  max-width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  justify-content: left;
+}
+
+/*.conocenos-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}*/
+
+.conocenos img {
+  
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  justify-content: right;
+}
+.conocenos p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.conocenos strong {
+  color: #8B0000;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #8B5E3B;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
